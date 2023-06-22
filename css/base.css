@@ -3,7 +3,8 @@ h1 {
 }
 
 body {
-	background: #A487FF;
+	background: linear-gradient(180deg, #6BBAF3 0%, #456CCF 100%);
+	/*background: linear-gradient(180deg, #4569B1 0%, #2376D7 50.52%, #FFF4C8 100%);*/
 	background-attachment: fixed;
 	/*background-color: #fdc100;*/
 }
@@ -271,9 +272,8 @@ a: visited {
 .infoText {
 	width: 90%;
 	margin: auto;
-	border-radius: 15px;
-    background-color: #B19DFF;
-    box-shadow: -7px -7px 20px #BBA9FF, 4px 4px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	box-shadow: 0px 0px 15px 0px #FFF;
 	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 
@@ -309,12 +309,25 @@ a: visited {
 	padding-left: 5%;
 }
 
+.outerPadding {
+	padding: 80px;
+}
+
 .infoSubtextCenter {
 	color: white;
-	/*text-align: center;*/
+	text-align: center;
 	font-family: Helvetica;
 	padding: 20px;
 	margin: auto;
+}
+
+.titleCenter {
+	color: white;
+	text-align: center;
+	font-family: Helvetica;
+	padding: 20px;
+	margin: auto;
+	font-size: 3.5em;
 }
 
 .infoSubtextLeft {
@@ -322,6 +335,9 @@ a: visited {
 	text-align: left;
 	font-family: Helvetica;
 	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 1.75;
 	margin: auto;
 }
 
@@ -539,23 +555,23 @@ a: visited {
 	color: white;
 	padding: 20px;
 	font-family: Helvetica;
-	background-color: #B19DFF;
-	border-radius: 15px;
-    box-shadow: -4px -4px 10px #BBA9FF, 4px 4px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
     cursor: pointer;
+	box-shadow: 0px 0px 7px 0px #FFF;
 }
 
 .fillButtons:hover{
+	padding: 20px;
 	color: white;
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
+	color: white;
 	padding: 20px;
 	font-family: Helvetica;
-	/*background-color: #fdc100;*/
-    background: #B19DFF;
-	border-radius: 15px;
-    box-shadow: inset -4px -4px 20px #BBA9FF, inset 4px 4px 15px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+    cursor: pointer;
+	box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.25) inset;
 }
 
 .formButtons {
@@ -740,8 +756,8 @@ li:hover {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #A487FF;
-  background: linear-gradient(#197FE0, #A487FF);
+  background-color: #476ED1;
+  /*background: linear-gradient(#197FE0, #A487FF);*/
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 75px;
